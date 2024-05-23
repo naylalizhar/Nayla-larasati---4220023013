@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
-
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller as BaseController;
-
-class Controller extends BaseController
+namespace App\Http\Controllers; 
+use OpenApi\Annotations as OA;
+/** 
+*@OA\Info(title="My Rest API", version="1.0")
+*/
+abstract class Controller
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    
 }
